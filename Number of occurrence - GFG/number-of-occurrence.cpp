@@ -19,12 +19,12 @@ public:
 	            c++;
 	            int t=m;
 	            m--;
-	            while((m>=0 and arr[m-1]==x)||arr[m]==x){
+	            while(arr[m]==x){
 	                c++;
 	                m--;
 	            }
 	            m=t+1;
-	            while((m<n and arr[m+1]==x)||arr[m]==x){
+	            while(arr[m]==x){
 	                c++;
 	                m++;
 	            }
