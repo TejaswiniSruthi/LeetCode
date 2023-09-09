@@ -97,16 +97,14 @@ struct Node {
 class Solution
 {
     public:
-    void func(Node* root,int &p,vector<int>&v){
+    void func(Node* root,int &p,int &v){
         if(root==NULL){
-            
-            return;
+            return ;
         }
-        
         func(root->right,p,v);
         p--;
         if(p==0){
-            v.push_back(root->data);
+            v=(root->data);
             return;
         }
         func(root->left,p,v);
@@ -114,9 +112,9 @@ class Solution
     int kthLargest(Node *root, int K)
     {
         //Your code here
-        vector<int>v;
+        int v;
         func(root,K,v);
-        return v[0];
+        return v;
     }
 };
 
