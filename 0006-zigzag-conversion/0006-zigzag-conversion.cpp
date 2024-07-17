@@ -9,7 +9,7 @@ public:
             ns+=s[j];
             cout<<"\n";
             cout<<j<<" ";
-            while(j+p1+p2<n || j+p1<n){
+            while(j+p1<n){
                 if(j+p1<n){
                     // cout<<p1<<" ";
                     j+=p1;
