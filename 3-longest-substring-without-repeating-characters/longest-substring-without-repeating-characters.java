@@ -12,9 +12,8 @@ class Solution {
                     if(c==s.charAt(x)){
                         x++;
                         break;
-                    }else{
-                        x++;
                     }
+                    x++;
                 }
             }
             max = max < y-x+1 ? y-x+1 : max;
